@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8sapiservice #app setting of k8s.web's api base address must match into this name
+  namespace: default
+spec:
+  selector:
+    app: k8s-api
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 80

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  k8s-api-deployment
+  labels:
+    app:  k8s-api-deployment
+spec:
+  selector:
+    matchLabels:
+      app: k8s-api
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: k8s-api
+    spec:
+      containers:
+      - name:  k8s-api
+        image:  mirzaevolution/k8s.api:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort:  80  
