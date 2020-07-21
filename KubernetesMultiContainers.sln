@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K8s.Api", "K8s.Api\K8s.Api.csproj", "{8679C735-EEB5-4A93-8CFC-16EA8977E3B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K8s.Web", "K8s.Web\K8s.Web.csproj", "{7F3E8E3F-4204-4EA8-B870-638D183E65B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kubernetes-deployment", "kubernetes-deployment", "{5E1F059E-7F9F-434D-99D2-322BBA5461B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{695780CD-EBCF-456E-8D0B-11FEE37EA018}"
+	ProjectSection(SolutionItems) = preProject
+		..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\api\deployment.yml = ..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\api\deployment.yml
+		..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\api\service.yml = ..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\api\service.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{531D8A86-7098-4AEA-AD66-0E460ED3BF5C}"
+	ProjectSection(SolutionItems) = preProject
+		..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\web\deployment.yml = ..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\web\deployment.yml
+		..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\web\service.yml = ..\Learn-Powershell\Kubernetes\1. Basic\k8s-app\web\service.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8679C735-EEB5-4A93-8CFC-16EA8977E3B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8679C735-EEB5-4A93-8CFC-16EA8977E3B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8679C735-EEB5-4A93-8CFC-16EA8977E3B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8679C735-EEB5-4A93-8CFC-16EA8977E3B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F3E8E3F-4204-4EA8-B870-638D183E65B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3E8E3F-4204-4EA8-B870-638D183E65B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3E8E3F-4204-4EA8-B870-638D183E65B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3E8E3F-4204-4EA8-B870-638D183E65B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{695780CD-EBCF-456E-8D0B-11FEE37EA018} = {5E1F059E-7F9F-434D-99D2-322BBA5461B4}
+		{531D8A86-7098-4AEA-AD66-0E460ED3BF5C} = {5E1F059E-7F9F-434D-99D2-322BBA5461B4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19E0EB64-365F-48E2-B3DC-E0EC3DF7CA41}
+	EndGlobalSection
+EndGlobal
